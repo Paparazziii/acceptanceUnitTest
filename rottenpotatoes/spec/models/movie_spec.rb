@@ -22,7 +22,7 @@ describe Movie do
 
     context 'director exists' do
       it 'find similar movies' do
-        expect(Movie.similar_movies(movie2.title)).to eql(['movie2','movie3'])
+        expect(Movie.similar_movies(movie2.title)).eql?(['movie2','movie3'])
       end
     end
   end
