@@ -1,0 +1,9 @@
+<h2> Similar Movies for <em><%= @movie.title %></em></h2>
+
+<ul>
+  <% @similar_movies.each do |movie| %>
+  <li>
+    <%= movie %>
+  </li>
+  <% end %>
+</ul>
